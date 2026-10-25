@@ -6,7 +6,7 @@ Copy-paste configs for using **[APIClaw](https://apiclaw.biz)**, a flat-rate, Op
 
 ## What APIClaw is (30 seconds)
 
-- **One key, many providers:** Claude, GPT, DeepSeek and more through one OpenAI-compatible endpoint. Browse current IDs in the [model hub](https://apiclaw.biz/ui/model_hub/).
+- **One key, many providers:** Claude, GPT, Gemini, Mistral, Llama, Cohere, Grok, DeepSeek, Qwen, Kimi and GLM through one OpenAI-compatible endpoint. List IDs with `GET https://apiclaw.biz/v1/models` or browse the [model hub](https://apiclaw.biz/ui/model_hub/).
 - **Flat monthly price, billed by requests, not tokens:** $19/month (500 requests/day) up to $129/month (8,000 requests/day). [Plans](https://apiclaw.biz/).
 - **Free trial:** 50 requests, no card. [Sign up](https://apiclaw.biz/ui/signup/) → [create a key](https://apiclaw.biz/ui/api-keys/).
 
@@ -18,7 +18,18 @@ Copy-paste configs for using **[APIClaw](https://apiclaw.biz)**, a flat-rate, Op
 | Anthropic Messages protocol (Claude Code, Anthropic SDK) | `https://apiclaw.biz` (**no** `/v1`) |
 | Tools that want the full endpoint URL (e.g. VS Code / Copilot custom endpoint) | `https://apiclaw.biz/v1/chat/completions` |
 
-Replace `YOUR_MODEL_ID` with an ID from the [model hub](https://apiclaw.biz/ui/model_hub/) (IDs look like `apiclaw/...`). Replace `YOUR_API_KEY` / `APICLAW_API_KEY` with your key.
+The examples default to **`apiclaw/claude-sonnet-5.5`**. Other real model IDs you can drop in:
+
+| Provider | Example IDs |
+|---|---|
+| Claude | `apiclaw/claude-sonnet-5.5`, `apiclaw/claude-opus-5.5`, `apiclaw/claude-fable-5.1` |
+| GPT | `apiclaw/gpt-6-sol` |
+| DeepSeek | `apiclaw/deepseek-v4-pro`, `apiclaw/deepseek-v4-flash` |
+| Qwen | `apiclaw/qwen3.8-max-0902`, `apiclaw/qwen3.8-flash` |
+| Kimi | `kimi-k3` |
+| GLM | `apiclaw/glm-5.3`, `apiclaw/glm-5.3-flash` |
+
+Gemini, Mistral, Llama, Cohere and Grok models are also available; run `curl https://apiclaw.biz/v1/models -H "Authorization: Bearer $APICLAW_API_KEY"` to see the exact IDs your plan exposes. Replace `YOUR_API_KEY` / `APICLAW_API_KEY` with your key.
 
 ## Examples
 

@@ -13,14 +13,14 @@ client = OpenAI(
 )
 
 resp = client.chat.completions.create(
-    model=os.environ.get("APICLAW_MODEL", "YOUR_MODEL_ID"),
+    model=os.environ.get("APICLAW_MODEL", "apiclaw/claude-sonnet-5.5"),
     messages=[{"role": "user", "content": "Say hello in one sentence."}],
 )
 print(resp.choices[0].message.content)
 
 # Streaming
 stream = client.chat.completions.create(
-    model=os.environ.get("APICLAW_MODEL", "YOUR_MODEL_ID"),
+    model=os.environ.get("APICLAW_MODEL", "apiclaw/claude-sonnet-5.5"),
     messages=[{"role": "user", "content": "Count to five."}],
     stream=True,
 )

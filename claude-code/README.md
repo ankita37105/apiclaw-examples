@@ -1,6 +1,6 @@
 # Claude Code + APIClaw (flat-rate Claude API for Claude Code)
 
-1. Get a key at https://apiclaw.biz/ui/api-keys/ and a model ID from https://apiclaw.biz/ui/model_hub/.
+1. Get a key at https://apiclaw.biz/ui/api-keys/ (the example uses `apiclaw/claude-sonnet-5.5`; swap in `apiclaw/claude-opus-5.5` or any ID from https://apiclaw.biz/ui/model_hub/).
 2. Merge [`settings.json`](settings.json) into `~/.claude/settings.json` (user-wide) or `.claude/settings.json` (per project).
 3. Start `claude` and run `/status`. The base URL should show `https://apiclaw.biz`.
 

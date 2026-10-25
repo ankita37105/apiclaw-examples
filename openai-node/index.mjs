@@ -8,7 +8,7 @@ const client = new OpenAI({
 });
 
 const resp = await client.chat.completions.create({
-  model: process.env.APICLAW_MODEL ?? "YOUR_MODEL_ID",
+  model: process.env.APICLAW_MODEL ?? "apiclaw/claude-sonnet-5.5",
   messages: [{ role: "user", content: "Say hello in one sentence." }],
 });
 console.log(resp.choices[0].message.content);

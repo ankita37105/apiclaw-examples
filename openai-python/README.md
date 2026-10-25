@@ -3,7 +3,7 @@
 ```bash
 pip install openai
 export APICLAW_API_KEY=YOUR_API_KEY
-export APICLAW_MODEL=YOUR_MODEL_ID
+export APICLAW_MODEL=apiclaw/claude-sonnet-5.5
 python main.py
 ```
 

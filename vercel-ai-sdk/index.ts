@@ -9,7 +9,7 @@ const apiclaw = createOpenAICompatible({
 });
 
 const { text } = await generateText({
-  model: apiclaw(process.env.APICLAW_MODEL ?? "YOUR_MODEL_ID"),
+  model: apiclaw(process.env.APICLAW_MODEL ?? "apiclaw/claude-sonnet-5.5"),
   prompt: "Write a haiku about TypeScript.",
 });
 console.log(text);

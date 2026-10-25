@@ -7,7 +7,7 @@ import os
 from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(
-    model=os.environ.get("APICLAW_MODEL", "YOUR_MODEL_ID"),
+    model=os.environ.get("APICLAW_MODEL", "apiclaw/claude-sonnet-5.5"),
     base_url="https://apiclaw.biz/v1",
     api_key=os.environ["APICLAW_API_KEY"],
 )

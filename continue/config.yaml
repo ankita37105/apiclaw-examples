@@ -4,7 +4,7 @@ schema: v1
 models:
   - name: APIClaw
     provider: openai
-    model: YOUR_MODEL_ID
+    model: apiclaw/claude-sonnet-5.5
     apiBase: https://apiclaw.biz/v1
     apiKey: ${{ secrets.APICLAW_API_KEY }}
     capabilities:

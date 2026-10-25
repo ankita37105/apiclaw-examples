@@ -1,5 +1,5 @@
 model_provider = "apiclaw"
-model = "YOUR_MODEL_ID"
+model = "apiclaw/gpt-6-sol"
 
 [model_providers.apiclaw]
 name = "APIClaw"

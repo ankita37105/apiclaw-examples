@@ -2,7 +2,7 @@
 
 ```bash
 pip install langchain-openai
-export APICLAW_API_KEY=YOUR_API_KEY APICLAW_MODEL=YOUR_MODEL_ID
+export APICLAW_API_KEY=YOUR_API_KEY APICLAW_MODEL=apiclaw/claude-sonnet-5.5
 python main.py
 ```
 

@@ -7,7 +7,7 @@ import os
 from llama_index.llms.openai_like import OpenAILike
 
 llm = OpenAILike(
-    model=os.environ.get("APICLAW_MODEL", "YOUR_MODEL_ID"),
+    model=os.environ.get("APICLAW_MODEL", "apiclaw/claude-sonnet-5.5"),
     api_base="https://apiclaw.biz/v1",
     api_key=os.environ["APICLAW_API_KEY"],
     is_chat_model=True,

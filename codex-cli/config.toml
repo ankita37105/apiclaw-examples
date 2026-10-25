@@ -1,0 +1,8 @@
+model_provider = "apiclaw"
+model = "YOUR_MODEL_ID"
+
+[model_providers.apiclaw]
+name = "APIClaw"
+base_url = "https://apiclaw.biz/v1"
+env_key = "APICLAW_API_KEY"
+wire_api = "responses"

@@ -1,0 +1,15 @@
+name: APIClaw config
+version: 1.0.0
+schema: v1
+models:
+  - name: APIClaw
+    provider: openai
+    model: YOUR_MODEL_ID
+    apiBase: https://apiclaw.biz/v1
+    apiKey: ${{ secrets.APICLAW_API_KEY }}
+    capabilities:
+      - tool_use
+      - image_input
+    roles:
+      - chat
+      - edit

@@ -8,6 +8,7 @@ Copy-paste configs for using **[APIClaw](https://apiclaw.biz)**, a flat-rate, Op
 
 - **One key, many providers:** Claude, GPT, Gemini, Mistral, Llama, Cohere, Grok, DeepSeek, Qwen, Kimi and GLM through one OpenAI-compatible endpoint. List IDs with `GET https://apiclaw.biz/v1/models` or browse the [model hub](https://apiclaw.biz/ui/model_hub/).
 - **Flat monthly price, billed by requests, not tokens:** $19/month (500 requests/day) up to $129/month (8,000 requests/day). [Plans](https://apiclaw.biz/).
+- **Will it be cheaper for you?** Check with the free [LLM API Cost Calculator for Coding Agents](https://ankita37105.github.io/llm-api-cost-notes/calculator.html). Heavier models count as more than one request, and for light use per-token billing is often cheaper.
 - **Free trial:** 50 requests, no card. [Sign up](https://apiclaw.biz/ui/signup/) → [create a key](https://apiclaw.biz/ui/api-keys/).
 
 ## Base URLs, the one thing to get right

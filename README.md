@@ -47,6 +47,7 @@ Gemini, Mistral, Llama, Cohere and Grok models are also available; run `curl htt
 | LangChain (Python) | [langchain/](langchain/) | standard OpenAI-compatible setup |
 | LlamaIndex | [llamaindex/](llamaindex/) | standard OpenAI-compatible setup |
 | Vercel AI SDK | [vercel-ai-sdk/](vercel-ai-sdk/) | standard OpenAI-compatible setup |
+| Go (stdlib client + CLI, on [pkg.go.dev](https://pkg.go.dev/github.com/ankita37105/apiclaw-examples/go)) | [go/](go/) | standard OpenAI-compatible setup |
 | curl | [curl/](curl/) | [apiclaw.biz/docs/](https://apiclaw.biz/docs/) |
 
 Examples marked "standard OpenAI-compatible setup" use each library's documented custom-base-URL option. They aren't covered by a dedicated APIClaw docs page yet. If something breaks, please [open an issue](../../issues).
